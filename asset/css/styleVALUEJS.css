@@ -1,3 +1,181 @@
+/* Reset styles for all elements */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -1px -7px 20px 0px #888888;
+}
+
+header .judul {
+    font-size: 24px;
+    color: black;
+}
+
+header .deskripsi {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 10px;
+}
+
+/* Menu styles */
+nav.menu {
+    background-color: #ffffff;
+    box-shadow: -1px -7px 20px 0px #888888;
+}
+
+nav.menu ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+nav.menu ul li a:hover {
+    color: orange;
+}
+
+/* Sidebar styles */
+aside.sidebar {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -1px -7px 20px 0px #888888;
+}
+
+aside.sidebar h2 {
+    font-size: 20px;
+    color: black;
+}
+
+aside.sidebar p {
+    font-size: 14px;
+    color: #888888;
+}
+
+/* Blog styles */
+div.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+div.conteudo {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -1px -7px 20px 0px #888888;
+}
+
+div.conteudo img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.conteudo h1 {
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+}
+
+div.conteudo hr {
+    border: 1px solid #888888;
+    margin: 10px 0;
+}
+
+div.conteudo p {
+    font-size: 14px;
+    color: #888888;
+}
+
+a.continue-lendo {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Mobile-first approach */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    header .judul {
+        font-size: 20px;
+    }
+
+    header .deskripsi {
+        font-size: 12px;
+    }
+
+    /* Menu */
+    nav.menu ul li {
+        margin-right: 10px;
+    }
+
+    nav.menu ul li a {
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+
+    /* Sidebar */
+    aside.sidebar h2 {
+        font-size: 18px;
+    }
+
+    aside.sidebar p {
+        font-size: 12px;
+    }
+
+    /* Blog */
+    div.conteudo {
+        flex-basis: 100%;
+    }
+
+    div.conteudo h1 {
+        font-size: 20px;
+    }
+
+    div.conteudo p {
+        font-size: 12px;
+    }
+}
+
+
 *, body{
     margin: 0;
     padding: 0;
@@ -270,3 +448,6 @@ input{
         margin-left: 25px;
         font-size: 14px;
     }
+
+
+    
